@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raju traders - Pure vegetarian resturants , get quality food item</title>
-    <meta name="description" content="Our quality food item and delicious food">
-    <!-- Tailwind CSS CDN with typography plugin -->
+    <title>Raju traders - Premier Pure Vegetarian Restaurant, Cafe & Sweets | Newada Lawa, Ghazipur</title>
+    <meta name="description" content="Raju traders, Newada Lawa, Ghazipur - Founded by Shri Raju Yadav. 100% Pure vegetarian dining, authentic Indian thali, fresh desi sweets, crispy snacks, and family cafe. Flat 15% OFF on Sundays!">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    
     <script>
         tailwind.config = {
             theme: {
@@ -29,7 +33,12 @@
                             600: "#059669",
                             700: "#047857",
                             800: "#065f46",
-                            900: "#064e3b",
+                            900: "#064e3b"
+                        },
+                        amber: {
+                            400: "#fbbf24",
+                            500: "#f59e0b",
+                            600: "#d97706"
                         }
                     }
                 }
@@ -37,64 +46,71 @@
         }
     </script>
     <style>
-        .hero-pattern {
-            background-color: #ffffff;
-            background-image: radial-gradient(#a7f3d0 0.75px, #ffffff 0.75px);
-            background-size: 24px 24px;
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(6, 78, 59, 0.94) 0%, rgba(15, 23, 42, 0.88) 50%, rgba(6, 95, 70, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1920&auto=format&fit=crop&q=80') center/cover no-repeat;
         }
     </style>
 </head>
-<body class="font-sans antialiased text-slate-800 bg-white selection:bg-brand-500 selection:text-white">
+<body class="font-sans antialiased text-slate-800 bg-white selection:bg-amber-400 selection:text-slate-900">
 
-    
-    <div class="bg-gradient-to-r from-amber-600 via-rose-600 to-amber-600 text-white text-center py-2 px-4 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm">
-        <i data-lucide="tag" class="w-4 h-4"></i>
-        <span>Special Offer: On Sunday get 15% off</span>
+    <!-- Special Offer Announcement Bar -->
+    <div class="bg-gradient-to-r from-emerald-800 via-amber-600 to-emerald-800 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-md">
+        <span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-white/20 text-[11px] font-black uppercase tracking-wider">Sunday Special</span>
+        <span class="flex items-center gap-1.5">
+            <i data-lucide="tag" class="w-4 h-4 text-amber-300"></i>
+            <strong>Flat 15% OFF</strong> on all Dine-in & Fresh Sweets every Sunday! Visit our Newada Lawa restaurant.
+        </span>
     </div>
-    
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    
-                    <img src="assets/logo.svg" alt="Raju traders" class="h-11 w-auto max-w-[160px] object-contain rounded-lg shadow-sm">
-                    
-                    <div>
-                        <a href="#" class="text-xl font-bold tracking-tight text-slate-900">Raju traders</a>
-                        
-                        <p class="text-xs text-slate-500 font-medium tracking-wide uppercase">Restaurant, Cafe & Sweets (रेस्टोरेंट / कैफे / मिठाई / बेकरी)</p>
-                        
+                
+                <!-- Brand Identity with Self-Contained Inline Vector SVG Emblem -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-800 via-emerald-700 to-emerald-950 p-2 text-white shadow-md shadow-emerald-900/30 border border-amber-400/60 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Chef Hat & Golden Flame Motif -->
+                            <path d="M30 68 H70 V60 H30 Z" fill="#fbbf24" rx="2"/>
+                            <path d="M26 60 C18 50 24 36 36 36 C38 26 62 26 64 36 C76 36 82 50 74 60 Z" fill="white" opacity="0.95"/>
+                            <circle cx="50" cy="48" r="5" fill="#f59e0b"/>
+                            <!-- Monogram Initial Badge -->
+                            <circle cx="72" cy="74" r="12" fill="#fbbf24"/>
+                            <text x="72" y="79" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="900" fill="#064e3b" text-anchor="middle">R</text>
+                        </svg>
                     </div>
-                </div>
+                    <div>
+                        <div class="text-xl font-black tracking-tight text-slate-900 group-hover:text-emerald-700 transition">Raju traders</div>
+                        <p class="text-[11px] font-bold text-emerald-700 tracking-wider uppercase">100% Pure Veg &bull; Restaurant &bull; Cafe &bull; Sweets</p>
+                    </div>
+                </a>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">About</a>
-                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Services</a>
-                    <a href="#why-us" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Why Choose Us</a>
-                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Contact</a>
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-emerald-700 transition">About Us</a>
+                    <a href="#menu" class="hover:text-emerald-700 transition">Our Menu & Delicacies</a>
+                    <a href="#offers" class="hover:text-emerald-700 transition">Sunday Special</a>
+                    <a href="#founder" class="hover:text-emerald-700 transition">Founder's Vision</a>
+                    <a href="#contact" class="hover:text-emerald-700 transition">Visit Us</a>
                 </nav>
 
-                <!-- Header CTA -->
-                <div class="hidden md:flex items-center gap-4">
-                    
-                    <a href="https://wa.me/8956233256?text=Hello%20Raju traders,%20I'm%20interested%20in%20your%20services" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition">
+                <!-- Header CTA Buttons -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://wa.me/918956233256?text=Hello%20Raju%20traders,%20I%20would%20like%20to%20order%20food%20or%20inquire%20about%20your%20menu" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-300 transition">
                         <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
                         WhatsApp
                     </a>
-                    
-                    <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-md shadow-brand-600/20 transition transform active:scale-95">
-                        Get in Touch
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <a href="tel:8522369741" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold bg-emerald-700 text-white hover:bg-emerald-800 shadow-md shadow-emerald-700/20 transition transform active:scale-95">
+                        <i data-lucide="phone-call" class="w-4 h-4 text-amber-300"></i>
+                        Call 85223 69741
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition" aria-label="Toggle menu">
+                    <button id="mobile-menu-btn" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition" aria-label="Toggle menu">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -102,379 +118,534 @@
         </div>
 
         <!-- Mobile Nav Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
-            <a href="#about" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">About</a>
-            <a href="#services" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Services</a>
-            <a href="#why-us" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Why Choose Us</a>
-            <a href="#contact" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-5 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="#about" class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-700">About Us</a>
+            <a href="#menu" class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-700">Our Menu & Delicacies</a>
+            <a href="#offers" class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-700">Sunday Special (15% Off)</a>
+            <a href="#founder" class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-700">Founder's Vision</a>
+            <a href="#contact" class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-700">Location & Contact</a>
             
-            <a href="https://wa.me/8956233256" target="_blank" class="block w-full text-center py-2.5 rounded-lg text-sm font-semibold bg-emerald-600 text-white mt-2">
-                Chat on WhatsApp
-            </a>
-            
+            <div class="pt-3 border-t border-slate-100 space-y-2">
+                <a href="https://wa.me/918956233256" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-bold bg-emerald-600 text-white shadow-sm">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    WhatsApp Order (+91 89562 33256)
+                </a>
+                <a href="tel:8522369741" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-bold bg-slate-900 text-white shadow-sm">
+                    <i data-lucide="phone-call" class="w-4 h-4 text-amber-400"></i>
+                    Call Directly (+91 85223 69741)
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden hero-pattern">
+    <section class="relative pt-20 pb-24 md:pt-32 md:pb-36 overflow-hidden hero-bg text-white">
+        <!-- Ambient Glow -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-32 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto">
+                
                 <!-- Pill Badges -->
-                <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
-                        <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-                        Restaurant, Cafe & Sweets (रेस्टोरेंट / कैफे / मिठाई / बेकरी)
+                <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/10 backdrop-blur-md text-amber-300 border border-white/20 shadow-inner">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        100% Pure Vegetarian &amp; Freshly Cooked
                     </div>
-                    
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
-                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-brand-600"></i>
-                        <span>Founder: Raju yadav</span>
+                    <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 backdrop-blur-md text-slate-200 border border-white/15">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-amber-300"></i>
+                        <span>Proprietor: Shri Raju Yadav</span>
                     </div>
-                    
                 </div>
 
                 <!-- Hero Heading -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-                    Pure vegetarian resturants , get quality food item
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
+                    Delicious Pure Vegetarian Dining &amp; <br class="hidden sm:inline">
+                    <span class="bg-gradient-to-r from-amber-300 via-amber-200 to-emerald-200 bg-clip-text text-transparent">Traditional Fresh Sweets</span>
                 </h1>
 
-                <!-- Hero Description -->
-                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed font-normal">
-                    Our quality food item and delicious food
+                <!-- Hero Subtitle -->
+                <p class="text-lg sm:text-xl text-slate-200 mb-10 leading-relaxed font-normal">
+                    Welcoming families and food lovers in Newada Lawa since 2024. Savor rich North Indian curries, pure desi ghee sweets, hot samosas, crispy dosas, and fresh kulhad chai crafted with absolute hygiene.
                 </p>
 
                 <!-- Hero CTAs -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    
-                    <a href="tel:8522369741" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-lg shadow-brand-600/25 transition transform active:scale-95">
-                        <i data-lucide="phone-call" class="w-5 h-5"></i>
-                        Call 8522369741
+                    <a href="tel:8522369741" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-lg shadow-amber-500/30 transition transform hover:-translate-y-0.5 active:scale-95">
+                        <i data-lucide="phone-call" class="w-5 h-5 text-slate-950"></i>
+                        Call Restaurant: 85223 69741
                     </a>
                     
-                    
-                    <a href="https://wa.me/8956233256" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-semibold bg-white text-slate-800 hover:bg-slate-50 border border-slate-200 shadow-sm transition">
-                        <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
-                        Instant WhatsApp Chat
+                    <a href="https://wa.me/918956233256?text=Hello%20Raju%20traders,%20please%20share%20today's%20menu%20and%20specials" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md transition shadow-md">
+                        <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+                        Instant WhatsApp Inquiry
                     </a>
-                    
                 </div>
 
-                <!-- Trust Stats / Highlights -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 border-t border-slate-100 max-w-2xl mx-auto mt-12 text-center">
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-lg sm:text-xl font-extrabold text-brand-600">2024</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Experience & Trust</div>
+                <!-- Trust Metrics / Highlights -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 border-t border-white/15 max-w-2xl mx-auto mt-14 text-center">
+                    <div class="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                        <div class="text-2xl font-black text-amber-300">Est. 2024</div>
+                        <div class="text-xs text-slate-300 font-semibold mt-1 uppercase tracking-wider">Trusted Taste</div>
                     </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-sm sm:text-base font-bold text-slate-800 line-clamp-1">8:00 AM to 11:00 PM</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Working Hours</div>
+                    <div class="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                        <div class="text-2xl font-black text-white">8 AM – 11 PM</div>
+                        <div class="text-xs text-slate-300 font-semibold mt-1 uppercase tracking-wider">Open Daily in Newada Lawa</div>
                     </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-lg sm:text-xl font-extrabold text-brand-600">100% Guaranteed</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Quality Service</div>
+                    <div class="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15">
+                        <div class="text-2xl font-black text-emerald-300">15% OFF</div>
+                        <div class="text-xs text-slate-300 font-semibold mt-1 uppercase tracking-wider">Sunday Discount</div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-slate-50 border-y border-slate-100">
+    <section id="about" class="py-24 bg-slate-50 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+                
+                <!-- Left: Text Narrative -->
                 <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-brand-100 text-brand-800 mb-4">
-                        ABOUT US
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 mb-4 uppercase tracking-wider">
+                        About Raju traders
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-6">
-                        Committed to Delivering Excellence in Every Detail
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6 leading-snug">
+                        Committed to Pure Vegetarian Excellence &amp; Unmatched Taste
                     </h2>
                     <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
-                        Our quality food item and delicious food
+                        Established in 2024 by <strong>Shri Raju Yadav</strong>, <strong>Raju traders</strong> has quickly become Newada Lawa’s destination for wholesome vegetarian dining and handcrafted sweets. We believe great food starts with authentic ingredients and honest preparation.
                     </p>
-                    
-                    <div class="space-y-3">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+                    <p class="text-slate-600 text-base leading-relaxed mb-8">
+                        Whether you are stopping by for breakfast chai and samosas, sharing an evening dinner thali with family, or picking up festive boxes of fresh laddoos and gulab jamun, we guarantee authentic flavours, spotless hygiene, and courteous service.
+                    </p>
+
+                    <!-- Feature Bullet Points -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">
                                 <i data-lucide="check" class="w-4 h-4"></i>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Experienced professionals dedicated to your success</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">100% Pure Desi Ghee &amp; Fresh Milk</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">All sweets and preparations use unadulterated ingredients sourced fresh every single morning.</p>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">
                                 <i data-lucide="check" class="w-4 h-4"></i>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Transparent pricing with no hidden charges</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Family Dining &amp; Clean Kitchen</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Spacious, air-conditioned seating with stringent food safety and sanitation protocols.</p>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">
                                 <i data-lucide="check" class="w-4 h-4"></i>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Custom tailored solutions suited to your requirements</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Bulk Catering &amp; Event Boxes</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Custom party catering, wedding sweet gift packs, and festival bulk orders delivered on time.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Feature Card / Visual Accent -->
+                <!-- Right: Visual Card with High-Res Restaurant Photo -->
                 <div class="relative">
-                    <div class="bg-gradient-to-tr from-brand-600 to-brand-800 rounded-3xl p-8 sm:p-10 text-white shadow-2xl relative overflow-hidden">
-                        <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
-                        <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6">
-                            <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3">Our Core Promise</h3>
-                        <p class="text-brand-100 text-sm sm:text-base leading-relaxed mb-8">
-                            At Raju traders, we put customer trust and quality above all else. Every project is handled with precision, care, and transparent communication.
-                        </p>
-                        <div class="border-t border-white/20 pt-6 flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-brand-200">Contact Us Directly</p>
-                                <p class="text-base font-bold text-white"></p>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80" alt="Raju traders Restaurant Ambiance" class="w-full h-[440px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 shadow-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black">
+                                    <i data-lucide="utensils" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-slate-900">Raju traders</div>
+                                    <div class="text-xs text-emerald-700 font-semibold">Newada Lawa, Ghazipur</div>
+                                </div>
                             </div>
-                            <a href="#contact" class="px-4 py-2 rounded-full bg-white text-brand-800 text-xs font-bold hover:bg-brand-50 transition">
-                                Connect
-                            </a>
+                            <p class="text-xs text-slate-600 italic">
+                                "Serving our community with 100% pure vegetarian authenticity, honest taste, and warmth."
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Menu & Culinary Specialties Grid -->
+    <section id="menu" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-brand-100 text-brand-800 mb-4">
-                    OUR SERVICES
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 mb-3 uppercase tracking-wider">
+                    Our Menu &amp; Delicacies
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">
-                    Comprehensive Solutions Tailored For You
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Handcrafted Pure Vegetarian Delights
                 </h2>
                 <p class="text-slate-600 text-base sm:text-lg">
-                    Discover how Raju traders can help you reach your goals with our premium service offerings.
+                    Every recipe is prepared fresh daily using rich Indian spices, farm-fresh vegetables, and pure desi ghee.
                 </p>
             </div>
 
-            <!-- Services Grid -->
+            <!-- 6 Food Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
+                <!-- Card 1: North Indian Thali & Curries -->
+                <div class="group rounded-2xl overflow-hidden bg-white border border-slate-200/90 hover:border-emerald-600 hover:shadow-2xl hover:shadow-emerald-600/10 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="briefcase" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Consultation & Planning
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Expert guidance and strategic planning for optimal project outcomes.
-                        </p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Execution & Delivery
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            End-to-end execution maintaining the highest standards of quality.
-                        </p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="life-buoy" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Ongoing Support
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Continuous dedicated assistance to ensure long-term satisfaction.
-                        </p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us / Trust Badges -->
-    <section id="why-us" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-                    Why Choose Raju traders?
-                </h2>
-                <p class="text-slate-400 text-base sm:text-lg">
-                    Here is what sets our services and commitment apart from the rest.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="award" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Proven Track Record</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Consistent results and trusted delivery that our clients can rely on day after day.
-                    </p>
-                </div>
-
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="clock" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Fast Turnaround</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        We value your time. Prompt responses and timely execution on every service request.
-                    </p>
-                </div>
-
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Customer-First Focus</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Personalized attention and responsive support whenever you have questions or updates.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <!-- Left: Contact Details -->
-                    <div class="p-8 sm:p-12 lg:p-16 bg-brand-700 text-white flex flex-col justify-between">
-                        <div>
-                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-white/20 text-white mb-6">
-                                GET IN TOUCH
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800&auto=format&fit=crop&q=80" alt="Royal Vegetarian Thali" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900 text-amber-300 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Chef Special
                             </div>
-                            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-                                Ready to work together?
-                            </h2>
-                            <p class="text-brand-100 text-base leading-relaxed mb-10">
-                                Contact Raju traders today for inquiries, quotes, or consultations. We look forward to speaking with you!
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition">
+                                Royal Veg Thali &amp; Paneer Curries
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Complete deluxe thali with Shahi Paneer, Dal Makhani, seasonal sabzi, hot tandoori rotis, fragrant basmati rice, raita, and sweet dessert.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+                        <span>Lunch &amp; Dinner Daily</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Card 2: Traditional Desi Ghee Sweets -->
+                <div class="group rounded-2xl overflow-hidden bg-white border border-slate-200/90 hover:border-emerald-600 hover:shadow-2xl hover:shadow-emerald-600/10 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=800&auto=format&fit=crop&q=80" alt="Fresh Indian Sweets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900 text-amber-300 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Pure Desi Ghee
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition">
+                                Traditional Sweets &amp; Bakery
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Melt-in-mouth Gulab Jamun, Rasgulla, Motichoor Laddu, Kaju Katli, milk peda, and freshly baked pastries prepared fresh every morning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+                        <span>Gift Boxes Available</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Card 3: Hot Samosas, Chaat & Snacks -->
+                <div class="group rounded-2xl overflow-hidden bg-white border border-slate-200/90 hover:border-emerald-600 hover:shadow-2xl hover:shadow-emerald-600/10 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&auto=format&fit=crop&q=80" alt="Crispy Samosas and Snacks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900 text-amber-300 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Fresh &amp; Crispy
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition">
+                                Samosas, Chaat &amp; Evening Snacks
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Golden crispy samosas filled with aromatic potato-spice mix, Dahi Papdi Chaat, Paneer Pakodas, and freshly made chutney dip.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+                        <span>Fried In Fresh Oil</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Card 4: South Indian Tiffin & Dosa -->
+                <div class="group rounded-2xl overflow-hidden bg-white border border-slate-200/90 hover:border-emerald-600 hover:shadow-2xl hover:shadow-emerald-600/10 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=800&auto=format&fit=crop&q=80" alt="South Indian Dosa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900 text-amber-300 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                All-Day Tiffin
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition">
+                                South Indian Masala Dosa &amp; Idli
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Crispy golden Butter Masala Dosa, steamed soft Idli, and crunchy Medu Vada served with steaming aromatic sambar and fresh coconut chutney.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+                        <span>Authentic Sambar Recipe</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Card 5: Desi Kulhad Chai & Refreshments -->
+                <div class="group rounded-2xl overflow-hidden bg-white border border-slate-200/90 hover:border-emerald-600 hover:shadow-2xl hover:shadow-emerald-600/10 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&auto=format&fit=crop&q=80" alt="Desi Kulhad Chai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-emerald-700 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Local Favourite
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition">
+                                Desi Kulhad Chai &amp; Cool Refreshments
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Freshly boiled ginger-cardamom tea served in traditional terracotta kulhads, sweet lassi with thick malai, badam milk, and chilled soft drinks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+                        <span>Natural Clay Aroma</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Card 6: Sunday Special Offer Card -->
+                <div id="offers" class="group rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-800 to-amber-600 text-white shadow-xl flex flex-col justify-between p-8 relative">
+                    <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-slate-950/30 text-amber-200 text-xs font-black uppercase tracking-wider mb-4">
+                            Weekend Special Offer
+                        </span>
+                        <h3 class="text-2xl font-black mb-3">
+                            Sunday 15% OFF Discount
+                        </h3>
+                        <p class="text-white/90 text-sm leading-relaxed mb-6">
+                            Bring your family on Sunday! Enjoy an instant <strong>Flat 15% Discount</strong> on all dine-in meals, family thalis, and sweet box purchases.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/918956233256?text=Hello%20Raju%20traders,%20I'm%20interested%20in%20claiming%20the%20Sunday%2015%25%20discount" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-950 text-white font-bold text-xs uppercase tracking-wider hover:bg-black transition shadow-md">
+                            Claim 15% Sunday Deal
+                            <i data-lucide="tag" class="w-4 h-4 text-amber-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Word & Story Card -->
+    <section id="founder" class="py-24 bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 sm:p-14 shadow-2xl">
+                <div class="flex flex-col sm:flex-row items-center gap-8 mb-8">
+                    <!-- Avatar / Monogram -->
+                    <div class="w-24 h-24 rounded-3xl bg-gradient-to-tr from-amber-400 to-emerald-400 p-1 shadow-lg shrink-0">
+                        <div class="w-full h-full rounded-[22px] bg-slate-900 flex items-center justify-center text-amber-300 font-black text-3xl">
+                            RY
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30 mb-2">
+                            Message from the Founder
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-black text-white">Shri Raju Yadav</h3>
+                        <p class="text-xs text-slate-300 font-medium">Founder &amp; Proprietor, Raju traders (Newada Lawa)</p>
+                    </div>
+                </div>
+
+                <blockquote class="text-lg sm:text-xl text-slate-200 leading-relaxed italic border-l-4 border-amber-400 pl-6 my-6">
+                    "When we started Raju traders in 2024, our promise was simple: serve food made with the same purity, care, and quality that we feed our own family. Every single item—from our sweets to our curries—is 100% vegetarian, prepared in pure desi ghee, and served with a heart full of respect."
+                </blockquote>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/10 text-xs text-slate-400">
+                    <div>
+                        <span class="text-white font-semibold">Direct Owner Hotline:</span>
+                        <a href="tel:8522369741" class="text-amber-300 font-bold ml-1 hover:underline">+91 85223 69741</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-emerald-400 font-semibold">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i>
+                        <span>100% Pure Veg &amp; Quality Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Store Location Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto bg-gradient-to-br from-slate-900 to-slate-950 rounded-3xl shadow-2xl overflow-hidden border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    
+                    <!-- Left: Contact Details -->
+                    <div class="p-8 sm:p-14 text-white flex flex-col justify-between">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 mb-4 uppercase tracking-wider">
+                                Visit Our Restaurant
+                            </div>
+                            <h2 class="text-3xl font-black mb-4">Visit Raju traders in Newada Lawa</h2>
+                            <p class="text-slate-300 text-sm mb-10 leading-relaxed">
+                                Join us for lunch, evening tea, or dinner with family. We also prepare party packs and wedding sweet hampers.
                             </p>
 
                             <div class="space-y-6">
-                                
                                 <div class="flex items-center gap-4">
                                     <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                                        <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+                                        <i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-brand-200 uppercase font-semibold">Phone</div>
-                                        <a href="tel:8522369741" class="text-lg font-semibold hover:underline">8522369741</a>
+                                        <div class="text-xs text-slate-400 uppercase font-bold">Restaurant Address</div>
+                                        <div class="text-base font-bold text-white">Newada Lawa, Ghazipur, Uttar Pradesh</div>
                                     </div>
                                 </div>
-                                
 
-                                
-
-                                
                                 <div class="flex items-center gap-4">
                                     <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                                        <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+                                        <i data-lucide="clock" class="w-5 h-5 text-amber-400"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-brand-200 uppercase font-semibold">Location</div>
-                                        <div class="text-base font-semibold">Newada lawa ghazipur</div>
+                                        <div class="text-xs text-slate-400 uppercase font-bold">Opening Hours</div>
+                                        <div class="text-base font-bold text-white">8:00 AM – 11:00 PM (Open All 7 Days)</div>
                                     </div>
                                 </div>
-                                
+
+                                <a href="tel:8522369741" class="flex items-center gap-4 group">
+                                    <div class="w-12 h-12 rounded-xl bg-white/10 group-hover:bg-amber-400 group-hover:text-slate-950 flex items-center justify-center shrink-0 transition">
+                                        <i data-lucide="phone-call" class="w-5 h-5 text-white group-hover:text-slate-950"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400 uppercase font-bold">Direct Phone Call</div>
+                                        <div class="text-base font-bold text-white group-hover:text-amber-300 transition">+91 85223 69741</div>
+                                    </div>
+                                </a>
+
+                                <a href="https://wa.me/918956233256" target="_blank" class="flex items-center gap-4 group">
+                                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 group-hover:bg-emerald-500 flex items-center justify-center shrink-0 transition">
+                                        <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400 group-hover:text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400 uppercase font-bold">WhatsApp Orders &amp; Inquiry</div>
+                                        <div class="text-base font-bold text-white group-hover:text-emerald-300 transition">+91 89562 33256</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
-                        
-                        <div class="mt-12 pt-8 border-t border-white/20">
-                            <a href="https://wa.me/8956233256" target="_blank" class="w-full inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-full text-sm font-bold bg-emerald-500 hover:bg-emerald-600 text-white transition shadow-lg">
+                        <div class="mt-12 pt-8 border-t border-white/15">
+                            <a href="https://wa.me/918956233256?text=Hello%20Raju%20traders,%20I'm%20contacting%20you%20from%20your%20website" target="_blank" class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full text-sm font-bold bg-emerald-500 hover:bg-emerald-400 text-white transition shadow-lg">
                                 <i data-lucide="message-circle" class="w-5 h-5"></i>
-                                Direct WhatsApp Message
+                                Order or Reserve on WhatsApp
                             </a>
                         </div>
-                        
                     </div>
 
-                    <!-- Right: Quick Message Form -->
-                    <div class="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Send an Inquiry</h3>
-                        <p class="text-slate-600 text-sm mb-8">Fill out the quick form below and we will get back to you shortly.</p>
-                        
-                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Raju traders.');" class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Full Name</label>
-                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
-                            </div>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Right: Quick Inquiry Form & Website QR Code -->
+                    <div class="p-8 sm:p-14 bg-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-black text-slate-900 mb-2">Book a Table / Place an Order</h3>
+                            <p class="text-slate-600 text-xs mb-8">Send us your message and our team will get in touch immediately.</p>
+
+                            <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Raju traders. We look forward to serving you!');" class="space-y-4">
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Email Address</label>
-                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Your Name</label>
+                                    <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
                                 </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Phone Number</label>
+                                        <input type="tel" required placeholder="10-digit Mobile" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Order / Query Type</label>
+                                        <select class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-white">
+                                            <option>Family Dine-in Table</option>
+                                            <option>Fresh Sweets Box</option>
+                                            <option>Party / Bulk Catering</option>
+                                            <option>Sunday 15% Discount</option>
+                                            <option>Takeaway Order</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Phone Number</label>
-                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase">Message / Special Requests</label>
+                                    <textarea rows="3" placeholder="Tell us about your requirements or number of guests..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
                                 </div>
-                            </div>
+
+                                <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-sm transition shadow-md">
+                                    Submit Request
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Scan & Save QR Code Card -->
+                        <div class="mt-8 pt-6 border-t border-slate-200 flex items-center gap-4 bg-slate-50 p-4 rounded-2xl">
+                            <img src="qr_code.png" alt="Raju traders Website QR" class="w-16 h-16 rounded-lg border border-slate-200 bg-white p-1 shrink-0">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Message / Requirements</label>
-                                <textarea rows="4" required placeholder="Tell us how we can help you..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                                <div class="text-xs font-bold text-slate-900 uppercase">Save Website on Phone</div>
+                                <p class="text-[11px] text-slate-500 mt-0.5">Scan this QR code with any camera to open and bookmark our menu.</p>
                             </div>
-                            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-black text-white font-semibold text-sm transition shadow-md">
-                                Submit Message
-                            </button>
-                        </form>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
+    <footer class="bg-slate-950 text-white border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
                 
-                <img src="assets/logo.svg" alt="Raju traders" class="h-9 w-auto max-w-[120px] object-contain rounded-md">
-                
-                <span class="text-sm font-semibold text-slate-800">Raju traders</span>
+                <!-- Footer Brand with Inline SVG Emblem -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-800 border border-amber-400/50 p-1.5 flex items-center justify-center shrink-0">
+                        <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 68 H70 V60 H30 Z" fill="#fbbf24"/>
+                            <path d="M26 60 C18 50 24 36 36 36 C38 26 62 26 64 36 C76 36 82 50 74 60 Z" fill="white" opacity="0.95"/>
+                            <circle cx="50" cy="48" r="5" fill="#f59e0b"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-base font-black text-white">Raju traders</span>
+                        <p class="text-[11px] text-emerald-400 font-semibold">100% Pure Vegetarian Restaurant &bull; Newada Lawa</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6 text-xs text-slate-400">
+                    <a href="#about" class="hover:text-amber-400 transition">About</a>
+                    <a href="#menu" class="hover:text-amber-400 transition">Menu</a>
+                    <a href="#offers" class="hover:text-amber-400 transition">Offers</a>
+                    <a href="#founder" class="hover:text-amber-400 transition">Founder</a>
+                    <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+                </div>
             </div>
-            <p class="text-xs text-slate-500">
-                &copy; 2026 Raju traders. All rights reserved. Powered by Instant Auto-Site.
-            </p>
-            <div class="flex items-center gap-6 text-xs text-slate-500">
-                <a href="#about" class="hover:text-brand-600">About</a>
-                <a href="#services" class="hover:text-brand-600">Services</a>
-                <a href="#contact" class="hover:text-brand-600">Contact</a>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Raju traders. All Rights Reserved. Pure Vegetarian Culinary Excellence.</p>
+                <p>Designed &amp; Powered by SSPS Student Engineers | Instant Website Pipeline</p>
             </div>
         </div>
     </footer>
 
-    <!-- Lucide Icon Init & Mobile Menu Script -->
+    <!-- Lucide Icons & Mobile Menu Script -->
     <script>
         lucide.createIcons();
 
@@ -484,6 +655,12 @@
         if (menuBtn && mobileMenu) {
             menuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
             });
         }
     </script>
